@@ -9,11 +9,13 @@ import doit         # プログラムを書きやすくするおまじない
 """
 doit.init()         # じゅんび（初期化）
 
-doit.setupPin(18)   # 18番のGPIOを使えるように準備する
+doit.setupPin(18)   # 18番のGPIOを使えるようにする
 
 doit.on(18)         # 18番のGPIOをONにする
 
-doit.wait()
+doit.wait()         # Enter入力まち
+
+doit.off(18)        # 18番のGPIOをOFFにする
 
 doit.term()         # あとかたづけ
 

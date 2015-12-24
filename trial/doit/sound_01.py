@@ -9,10 +9,10 @@ import doit         # プログラムを書きやすくするおまじない
 """
 doit.init()         # じゅんび（初期化）
 
-doit.setupPin(18)   # 18番のGPIOを使えるように準備する
+doit.setupPin(18)   # 18番のGPIOを使えるようにする
 
-doit.play(18,440)   # 18番のGPIOを使ってドの音を鳴らす
-doit.play(18,494)   # 18番のGPIOを使ってレの音を鳴らす
+doit.play(18,440)   # 18番のGPIOを使ってドの音をならす
+doit.play(18,494)   # 18番のGPIOを使ってレの音をならす
 
 doit.term()         # あとかたづけ
 
