@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
 # _*_ coding: utf-8 _*_
 
-import doit         # プログラムを書きやすくするおまじない
+from doit import *  # プログラムを書きやすくするおまじない
 
-"""
-プログラム本体
+init()         # じゅんび（初期化）
 
-"""
-doit.init()         # じゅんび（初期化）
+setupPin(18)   # 18番のGPIOを使えるようにする
 
-doit.setupPin(18)   # 18番のGPIOを使えるようにする
+on(18)         # 18番のGPIOをONにする
 
-doit.on(18)         # 18番のGPIOをONにする
+wait()         # Enter入力まち
 
-doit.wait()         # Enter入力まち
+off(18)        # 18番のGPIOをOFFにする
 
-doit.off(18)        # 18番のGPIOをOFFにする
-
-doit.term()         # あとかたづけ
-
+term()         # あとかたづけ
