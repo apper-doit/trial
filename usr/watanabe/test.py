@@ -9,9 +9,5 @@ mc.player.setTilePos(x,y+1,z)
 
 mc.setBlock(x,y,z,57)
 
-
-
-
-
 mc.postToChat("Hello Player")
 
